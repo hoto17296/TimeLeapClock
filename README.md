@@ -1,7 +1,7 @@
 # Time Leap Clock
 A macOS screen saver that displays a clock like the movie "時をかける少女 (The Girl Who Leapt Through Time)".
 
-![](image.png)
+![](example.gif)
 
 ## Installation
 0. Download the latest release from the [releases page](https://github.com/hoto17296/TimeLeapClock/releases) and unzip it.
