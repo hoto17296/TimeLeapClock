@@ -4,7 +4,7 @@ class TimeLeapClockView: ScreenSaverView {
     
     let dateFormatter = DateFormatter()
     var textRect: NSRect!
-    var textAttributes: [String: Any] = [:]
+    var textAttributes: [NSAttributedString.Key: NSObject] = [:]
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -29,9 +29,9 @@ class TimeLeapClockView: ScreenSaverView {
         shadow.shadowColor = NSColor.red
         shadow.shadowBlurRadius = fontSize / 4.0
         self.textAttributes = [
-            NSFontAttributeName: NSFont(name: "TimeLeap", size: fontSize),
-            NSForegroundColorAttributeName: NSColor.red,
-            NSShadowAttributeName: shadow,
+            NSAttributedString.Key.font: NSFont(name: "TimeLeap", size: fontSize)!,
+            NSAttributedString.Key.foregroundColor: NSColor.red,
+            NSAttributedString.Key.shadow: shadow,
         ]
     }
     
